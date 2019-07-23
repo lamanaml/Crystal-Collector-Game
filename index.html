@@ -19,9 +19,9 @@
 
 <body >
   <div class="container">
-    <div class="jumbotron">
-      <h1>Crystal Guess Game</h1> 
-      <p> Each crystal below is assigned a value.  Use them to add numbers that equal:</p> 
+    <div class="jumbotron" style="background-color:goldenrod; color:blue" >
+      <h1 class="text-center">Crystal Guess Game</h1> 
+      <p> Each crystal below is assigned a value.  Use them to add numbers that equal the number to match.  Go over and you lose!</p> 
       <div class="row">
         <div class="col-6"><h2>Number to match</h2>
       <div class="alert alert-primary h2" role="alert" id="crystal-Value">
@@ -35,19 +35,20 @@
     </div>
   
 
-  <div class="container">
-    <button dataBtnId="btn1" class="btn img-thumbnail" value="" alt="clear"></button>
-    <button dataBtnId="btn2" class="btn img-thumbnail" value="" alt="clear"></button>
-    <button dataBtnId="btn3" class="btn img-thumbnail" value="" alt="clear"></button>
-    <button dataBtnId="btn4" class="btn img-thumbnail" value="" alt="clear"></button>
+  <div class="container jumbotron text-center " style="background-color:goldenrod; color:blue" >
+    <button Id="btn1" class="btn img-thumbnail" value="" alt="clear"></button>
+    <button Id="btn2" class="btn img-thumbnail" value="" alt="clear"></button>
+    <button Id="btn3" class="btn img-thumbnail" value="" alt="clear"></button>
+    <button Id="btn4" class="btn img-thumbnail" value="" alt="clear"></button>
   </div>
-  <div class="container ">
+  <div class="container">
       <div class="row">
-        <div class="col-6"><h2>Your Wins</h2>
+        <div class="jumbotron col-5" style="background-color:goldenrod; color:blue" ><h2>Your Wins</h2>
         <div class="alert alert-primary h2" role="alert" id="your-Wins">
         </div>
       </div>
-      <div class="col-6"><h2>Your Losses</h2>
+      <div  class="col-2 "></div>
+      <div  class="jumbotron col-5 " style="background-color:goldenrod; color:blue" ><h2>Your Losses</h2>
         <div class="alert alert-primary h2" role="alert" id="your-Losses"></div>
       </div>
     </div>
