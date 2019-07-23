@@ -3,11 +3,15 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Unit 4 Game</title>
-    
-  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!--added stylesheets-->
+    <link rel="stylesheet" href="assets/css/reset.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="assets/css/style.css"></link>
+  
+  <!-- Added link to jQuery and javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
   
  
  
@@ -15,23 +19,40 @@
 
 <body >
   <div class="container">
-  <div class="jumbotron">
-    <h1>Crystal Guess Game</h1> 
-    <p> Use the crystals below to add numbers that match</p> 
-    <div id="random-Number"><div>
-  </div>
+    <div class="jumbotron">
+      <h1>Crystal Guess Game</h1> 
+      <p> Each crystal below is assigned a value.  Use them to add numbers that equal:</p> 
+      <div class="row">
+        <div class="col-6"><h2>Number to match</h2>
+      <div class="alert alert-primary h2" role="alert" id="crystal-Value">
+      </div>
+        </div>
+        <div class="col-6"><h2>Your total</h2>
+        <div class="alert alert-primary h2" role="alert" id="user-Total"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+  
 
-  <div class="well ">
-  <img src="assets/images/clear.jpg" class="img-thumbnail" alt="clear">
-  <img src="assets/images/diamond.jpg" class="img-thumbnail" alt="diamond">
-  <img src="assets/images/purple.jpg" class="img-thumbnail" alt="purple">
-  <img src="assets/images/star.jpg" class="img-thumbnail" alt="star">
+  <div class="container">
+    <button dataBtnId="btn1" class="btn img-thumbnail" value="" alt="clear"></button>
+    <button dataBtnId="btn2" class="btn img-thumbnail" value="" alt="clear"></button>
+    <button dataBtnId="btn3" class="btn img-thumbnail" value="" alt="clear"></button>
+    <button dataBtnId="btn4" class="btn img-thumbnail" value="" alt="clear"></button>
   </div>
-   </div>
+  <div class="container ">
+      <div class="row">
+        <div class="col-6"><h2>Your Wins</h2>
+        <div class="alert alert-primary h2" role="alert" id="your-Wins">
+        </div>
+      </div>
+      <div class="col-6"><h2>Your Losses</h2>
+        <div class="alert alert-primary h2" role="alert" id="your-Losses"></div>
+      </div>
+    </div>
+  </div>
     
- <script
-  src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"
-  integrity="sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc="
-  crossorigin="anonymous"></script>
+ 
 </body>
 </html>
