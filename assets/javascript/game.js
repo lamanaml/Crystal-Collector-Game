@@ -8,6 +8,7 @@
     var numbertoGuess = 0
     var total = 0
     var sum = 0
+    
 
 //There will be four crystals displayed as buttons on the page.
 // The player will be shown a random number at the start of the game.
@@ -91,20 +92,26 @@ console.log(numbertoGuess)
 // sum()
 
 
-function sumArray(){
-	var sum = 0;
+function sumArray(crystalArray){
+    sum = sum 
 	for(var j = 0; j < crystalArray.length ; j++){
-		if (Number.isFinite(crystalArray[j])) {
-			sum = sum + crystalArray[j];
-		}
-        
+		if (crystalArray[j]) {
+			sum += crystalArray[j];
+    	}  
 	}
-	return sum;
     
+	return sum;
 }
-sumArray()
+sumArray(crystalArray)
 
-if (sum === numbertoGuess) {
+
+// for (var i = 0; i < crystalArray.length; i++) {
+//     (total) = total + crystalArray[i] ;
+//     console.log(crystalArray[i])
+// }
+   //console.log(total)
+  console.log("sum: " + sum)
+    if (sum === numbertoGuess) {
         console.log(numbertoGuess)
         alert("You Won")
         wins++
@@ -113,17 +120,14 @@ if (sum === numbertoGuess) {
         counter = 0 
          
         }
-        else if (sum >= numbertoGuess) {
+//The player loses if their score goes above the random number.
+    else if (sum >= numbertoGuess) {
         alert("You Lost")
         losses++
         $("#your-Losses").html(losses)
         startGame(); 
         counter = 0 
        }
-  
-    
-//The player loses if their score goes above the random number.
-    
 
 //The game restarts whenever the player wins or loses.
 
