@@ -1,6 +1,5 @@
   $(document).ready(function() {
-
-    var buttonOptions = [10, 5, 3, 7];
+    
     var counter = 0;
     var wins = 0;
     var losses = 0;
@@ -8,57 +7,59 @@
 
 //There will be four crystals displayed as buttons on the page.
 // The player will be shown a random number at the start of the game.
-    var randomNumber = (Math.floor(20 + Math.random() * 100)); 
-    $("#crystal-Value").text(randomNumber);
-
-    function startGame() {
-        counter = 0;
-        userTotal = 0
-        crystalValue = randomNumber
-    }
-
-//show user total
+    var numbertoGuess = (Math.floor(20 + Math.random() * 100)); 
+    $("#crystal-Value").text(numbertoGuess);
     $("#user-Total").html(userTotal);
-
-    var randomButton = function(ranButton) {
-        for (var i = 0; i < buttonOptions.length; i++) {
-            buttonOptions = (1 + Math.floor(Math.random() * 12));
-            };
-            console.log(randomButton)
+    
+//function generate () {
+for (var i = 0; i < 4; i++) {
+    buttonRan = (1 + Math.floor(Math.random() * 12));  
     };
+     $(".btn").on("click", function() {
+        var btnId = $(this).attr("#Id");
+        counter+= buttonRan;
+        $("#user-Total").html(counter) 
+    });
+  //  };
+
+
+//   $("#btn1").click(function(){
+//        $("#btn1").append("<class value="+ buttonRan+"></span>") 
+//        $("#user-Total").html(counter) 
+//   })
+//   $("#btn2").click(function(){
+//       $("#btn2").append("<class value="+ buttonRan+"></span>") 
+//   })
+//   $("#btn3").click(function(){
+//       $("#btn3").append("<class value="+ buttonRan+"></span>") 
+//   })
+//   $("#btn4").click(function(){
+//       $("#btn4").append("<class value="+ buttonRan+"></span>") 
+//   })
+   
    
  //When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
-//btnId.attr("#id", buttonOptions[i]);  
-//$("#btnId").attr("#id", buttonOptions[i]);
    
  // Your game will hide this amount until the player clicks a crystal.
 //When they do click one, update the player's score counter.
-    btn1.value = ranButton();
-    btn2.value = ranButton();
-    btn3.value = ranButton();
-    btn4.value = ranButton();
 
-    $(".btn").on("click", function() {
-        var btnId = $(this).attr("#Id");
-        counter+= buttonOptions;
-        $("#user-Total").html(counter) 
-    });
+ 
     
 // All of the same game win-lose logic applies. So the rest remains unchanged.
      
 //The player wins if their total score matches the random number from the beginning of the game.
-    if (counter === crystalValue) {
-        wins++
-        $("#your-Wins").html(wins) 
-        startOfGame = false
-        }
+    // if (counter === crystalValue) {
+    //     wins++
+    //     $("#your-Wins").html(wins) 
+    //     startOfGame = false
+    //     }
     
 //The player loses if their score goes above the random number.
-    else if (counter >= crystalValue) {
-        losses++
-        $("#your-Losses").html(losses)
-        startOfGame = false 
-        }
+    // else if (counter >= crystalValue) {
+    //     losses++
+    //     $("#your-Losses").html(losses)
+    //     startOfGame = false 
+    //     }
 
 //The game restarts whenever the player wins or loses.
 
@@ -69,6 +70,3 @@
 
  //  startGame();
   });
-
-
-   
