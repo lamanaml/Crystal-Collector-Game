@@ -1,3 +1,6 @@
+URL to the game:
+ https://lamanaml.github.io/Word-Guess-Game/
+
 ### Option One: CrystalsCollector Game (Recommended)
 
 ![Crystal Collector](Images/1-CrystalCollector.jpg)
