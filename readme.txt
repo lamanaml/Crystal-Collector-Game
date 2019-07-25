@@ -1,6 +1,6 @@
 URL to the game:
- https://github.com/lamanaml/Crystal-Collector-Game
-
+ https://lamanaml.github.io/Crystal-Collector-Game/
+ 
 ### Option One: CrystalsCollector Game (Recommended)
 
 ![Crystal Collector](Images/1-CrystalCollector.jpg)
