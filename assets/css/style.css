@@ -25,7 +25,7 @@ h3 {
 
 .jumbotron {
   padding:15px;
-  margin:0px 0px 100px 0px;
+
   background-image: url("../images/crystalbg3.jpg");
   background-size: cover;
 }
@@ -74,14 +74,33 @@ font-size: 50px;
 
  .losses {
 font-family: 'Staatliches', cursive;
-font-size: 20px;
+font-size: 30px;
   color: red;
   align-items: center;
  }
+  .score {
+font-family: 'Staatliches', cursive;
+font-size: 30px;
+  color: orange;
+  align-items: center;
+  }
 
  .wins {
 font-family: 'Staatliches', cursive;
-font-size: 20px;
+font-size: 30px;
   color: green;
   align-items: center;
+ }
+
+ .footer {
+font-family: verdana
+font-size: 10px;
+margin-top: 20px;
+padding: 15px;
+background-color: grey;
+align-items: center;
+position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
  }

@@ -1,32 +1,36 @@
   $(document).ready(function() {
-      
-    var buttonOptions = []
-    var crystalArray = []
-    var counter = 0;
-    var wins = 0;
-    var losses = 0;
+
+  //assign variables 
+  var numbertoGuess = "";  
+  var counter = 0;
+  var wins = 0;
+  var losses = 0;
+  var buttonOptions = []
+  var crystalArray = []
+
     var userTotal = 0;
-    var numbertoGuess = 0;
-    var total = 0;
+    
+ 
     
 //There will be four crystals displayed as buttons on the page.
 // The player will be shown a random number at the start of the game.
 function resetAll() {
   crystalArray;
+  buttonOptions;
   
 }
-
+for (var i = 0; i < 4; i++) {
+    
+    buttonRan = (1 + Math.floor(Math.random() * 12));  
+    buttonOptions.push(buttonRan)
+ };
 
 var startGame = function(){
     numbertoGuess = (Math.floor(20 + Math.random() * 100)); 
     $("#crystal-Value").text(numbertoGuess);
     $("#user-Total").html(userTotal);
     
-for (var i = 0; i < 4; i++) {
-    
-    buttonRan = (1 + Math.floor(Math.random() * 12));  
-    buttonOptions.push(buttonRan)
- };
+
 
  //When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
 
