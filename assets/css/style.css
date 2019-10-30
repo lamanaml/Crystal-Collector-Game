@@ -1,18 +1,35 @@
 body {
-  background-color: blue;
-  background-image: url("../images/crystalbg.jpg");
+  background-color: white;
+  
   
   }
+.container, 
+.row{
+  
+  align-items: center;
+}
 
 h1 {
+  font-family: 'Marck Script', cursive;
   font-size: 50px;
   color: blue;
   align-items: center;
 }
+h3 {
+  font-family: 'B612 Mono', monospace;
+  font-size: 16px;
+  color: blue;
+  align-items: center;
+}
+
 
 .jumbotron {
   padding:15px;
-  margin-bottom:20px;
+  margin:0px 0px 200px 0px;
+  background-image: url("../images/crystalbg3.jpg");
+  background-size: cover;
+  height:300px; 
+
 }
 
 .btn {
@@ -23,15 +40,50 @@ width: 150px;
 }
 
 #btn1 {
-  background-image:url('../images/clear.jpg');
+  background-image:url('../images/giphy1.gif');
+  background-repeat: no-repeat;
+  background-size: 150px;
 }
 
 #btn2 {
-  background-image:url('../images/diamond.jpg');
+  background-image:url('../images/giphy2.gif');
+  background-repeat: no-repeat;
+  background-size: 200px;
 }
 #btn3 {
-  background-image:url('../images/purple.jpg');
+  background-image:url('../images/giphy4.gif');
+  background-repeat: no-repeat;
+ background-size: 150px;
 }
 #btn4 {
-  background-image:url('../images/star.jpg');
+  background-image:url('../images/giphy3.gif');
+  background-repeat: no-repeat;
+  background-size: 150px;
 }
+.num {
+font-family: 'Staatliches', cursive;
+font-size: 20px;
+  color: gray;
+  align-items: center;
+ }
+
+ .target {
+font-family: 'Staatliches', cursive;
+font-size: 50px;
+  color: blue;
+  align-items: center;
+ }
+
+ .losses {
+font-family: 'Staatliches', cursive;
+font-size: 20px;
+  color: red;
+  align-items: center;
+ }
+
+ .wins {
+font-family: 'Staatliches', cursive;
+font-size: 20px;
+  color: green;
+  align-items: center;
+ }

@@ -5,6 +5,9 @@
     <title>Unit 4 Game</title>
     <!--added stylesheets-->
     <link rel="stylesheet" href="assets/css/reset.css"></link>
+   <link href="https://fonts.googleapis.com/css?family=Marck+Script|Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=B612+Mono|Marck+Script|ZCOOL+XiaoWei|Staatliches&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="assets/css/style.css"></link>
@@ -12,47 +15,50 @@
   <!-- Added link to jQuery and javascript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/game.js"></script>
-  
- 
- 
 </head>
 
-<body >
-  <div class="container">
-    <div class="jumbotron" style="background-color:goldenrod; color:blue" >
-      <h1 class="text-center">Crystal Guess Game</h1> 
-      <p> Each crystal below is assigned a value.  Use them to add numbers that equal the number to match.  Go over and you lose!</p> 
-      <div class="row">
-        <div class="col-6"><h2>Number to match</h2>
-      <div class="alert alert-primary h2" role="alert" id="crystal-Value">
-      </div>
+<body>
+ 
+    <div class="jumbotron">
+      <h1 class="text-center">Crystal Collector Game</h1> 
+      <p class="text-center"> Each crystal below is assigned a value.  Use them to add numbers that equal the Target Number.  Go over and you lose!</p> 
+    <div class="container">
+      <div class="row text-center">
+        <div class=" col-6" >
+          <h3>Your Wins</h3>
+          <div class="num wins"  id="your-Wins">
+          </div>
         </div>
-        <div class="col-6"><h2>Your total</h2>
-        <div class="alert alert-primary h2" role="alert" id="user-Total"></div>
-        </div>
+        <div  class="col-6" >
+          <h3>Your Losses</h3>
+          <div class="num losses" id="your-Losses">
+          </div>
         </div>
     </div>
-    </div>
-  
 
-  <div class="container jumbotron text-center " style="background-color:goldenrod; color:blue" >
+    <div class="row text-center">
+      <div class="col-3">
+        <h3>Target Number</h3>
+        <div class="num target" id="crystal-Value">
+        </div>
+      </div>
+      <div class="col-3">
+        <h3>Score</h3>
+        <div class="num score" id="user-Total"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div  class="container text-center">
     <button id="btn1" class="btn img-thumbnail"  alt="clear"></button>
     <button id="btn2" class="btn img-thumbnail"  alt="clear"></button>
     <button id="btn3" class="btn img-thumbnail"  alt="clear"></button>
     <button id="btn4" class="btn img-thumbnail"  alt="clear"></button>
   </div>
-  <div class="container">
-      <div class="row">
-        <div class="jumbotron col-5" style="background-color:goldenrod; color:blue" ><h2>Your Wins</h2>
-        <div class="alert alert-primary h2" role="alert" id="your-Wins">
-        </div>
-      </div>
-      <div  class="col-2 "></div>
-      <div  class="jumbotron col-5 " style="background-color:goldenrod; color:blue" ><h2>Your Losses</h2>
-        <div class="alert alert-primary h2" role="alert" id="your-Losses"></div>
-      </div>
-    </div>
-  </div>
+  
+
+</div>
     
  
 </body>
