@@ -4,13 +4,13 @@ body {
   
   }
 .container, 
-.row{
+.row {
   
   align-items: center;
 }
 
 h1 {
-  font-family: 'Marck Script', cursive;
+  font-family: 'Rock Salt', cursive;
   font-size: 50px;
   color: blue;
   align-items: center;
@@ -25,11 +25,9 @@ h3 {
 
 .jumbotron {
   padding:15px;
-  margin:0px 0px 200px 0px;
+  margin:0px 0px 100px 0px;
   background-image: url("../images/crystalbg3.jpg");
   background-size: cover;
-  height:300px; 
-
 }
 
 .btn {
